@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('./fonts/Norse.woff2') format('woff2'),
+        url('./fonts/Norse.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url('./fonts/Norse-Bold.woff2') format('woff2'),
+        url('./fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body
+{
+    display:flex;
+    justify-content: flex-start;
+}
+
+h1, h2, img
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+img[src = "leaves.jpg"]
+{
+    margin-left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+img[src = "odin-logo.png"]
+{
+    height: 70%;
+    width: 20%;
+}
+
+.left-image-container
+{
+    position: relative;
+    /* makes sure that the left container is 33% of the screen always and 
+    keeps the right side container from pusing out all the way to the end of the screen*/
+    width:33%;
+    height: auto;
+}
+
+.logo-container
+{
+    padding: 0px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(18, 18, 18, 0.567);
+    position: absolute;
+    top: 190px;
+}
+
+.service-name
+{
+    color:rgb(238, 236, 236);
+    font-size: 5rem;
+    font-family: "Norse", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.right-form-container
+{
+    /*keeps the page balanced by not increasing in size and making th eleft conatainer smaller*/
+    width: 67%;
+    height: auto;
+}
+
+h2
+{
+    margin-left: 1rem;
+    margin-top: 3rem;
+}
+
+h2 + h2
+{
+    margin-top: 1rem;
+}
+
+.user-info
+{
+    position: relative;
+}
+.user-info legend
+{
+    position: absolute;
+    left: 2rem;
+    top: 1rem;
+    font-size: 1.3rem;
+}
+
+.form-name, .form-contact, .form-password
+{
+    margin-left: 1.5rem;
+    display: flex;
+    gap: 3rem;
+}
+.form-name
+{
+    margin-top: 2rem;
+}
+
+p.input
+{
+    display: flex;
+    flex-direction: column;
+}
+
+label
+{
+    font-size: 0.7rem;
+}
+button
+{
+    background-color: #596D48;
+    color:rgb(229, 228, 224);
+}
+
